@@ -1,0 +1,219 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Retailer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background-color:#ADD8E6;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product-item {
+            border: 2px solid #ddd;
+            padding: 9px;
+            width: calc(33.33% - 40px);
+            box-sizing: border-box;
+        }
+        .product-item img {
+            max-width: 80%;
+            height: auto;
+            margin-bottom: 9px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WELCOME TO OUR FASHION HUB</h1>
+    </header>
+    <nav>
+        <a href="#new-arrivals">New Arrivals</a>
+        <a href="#promotions">Promotions</a>
+        <a href="#mens">Men's</a>
+        <a href="#womens">Women's</a>
+        <a href="#kids">Kids</a>
+    </nav>
+
+    <section id="new-arrivals">
+        <h2>New Arrivals</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="new-mens-shirt.jpeg" alt="Men's Casual Shirt"width="450" height="450">
+                <h3>Men's Casual Shirt</h3>
+                <p>Price: Rs.9,000</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="new-womens-dress.jpg" alt="Women's Summer Dress"width="450" height="450">
+                <h3>Women's Summer Dress</h3>
+                <p>Price: Rs.11,400</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="new-kids-shoes.jpg" alt="Kids' Sports Shoes">
+                <h3>Kids' Sports Shoes</h3>
+                <p>Price: Rs.6,800</p>
+                <p>Availability: Limited stock</p>
+            </div>
+            <div class="product-item">
+                <img src="new-sunglasses.jpg" alt="Stylish Sunglasses">
+                <h3>Stylish Sunglasses</h3>
+                <p>Price: Rs.6,200</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="promotions">
+        <h2>Promotions</h2>
+        <p>Get up to 50% off on selected items! Limited time offer.</p>
+        <div class="product">
+            <div class="product-item">
+                <img src="promo-mens-jacket.png" alt="Men's Jacket">
+                <h3>Men's Jacket</h3>
+                <p><del>Original Price: Rs.29,000</del></p>
+                <p>Discounted Price: Rs.14,500</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="promo-womens-handbag.png" alt="Women's Handbag">
+                <h3>Women's Handbag</h3>
+                <p><del>Original Price: Rs.23,200</del></p>
+                <p>Discounted Price: Rs.11,600</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="promo-kids-backpack.jpg" alt="Kids' Backpack">
+                <h3>Kids' Backpack</h3>
+                <p><del>Original Price: Rs.11,600</del></p>
+                <p>Discounted Price: Rs.5,800</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="mens">
+        <h2>Men's Clothing</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="mens-tshirt.jpg" alt="Men's T-Shirt">
+                <h3>Men's T-Shirt</h3>
+                <p>Price: Rs.5,800</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="Men's Jeans.jpg" alt="Men's Jeans">
+                <h3>Men's Jeans</h3>
+                <p>Price: Rs.14,500</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="mens-sneakers.jpg" alt="Men's Sneakers">
+                <h3>Men's Sneakers</h3>
+                <p>Price: Rs.17,400</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="womens">
+        <h2>Women's Clothing</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="Women's Top.webp" alt="Women's Top">
+                <h3>Women's Top</h3>
+                <p>Price: Rs.7,200</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="Women's Skirt.webp" alt="Women's Skirt">
+                <h3>Women's Skirt</h3>
+                <p>Price: Rs.10,150</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="Women's Heels.jpg" alt="Women's Heels">
+                <h3>Women's Heels</h3>
+                <p>Price: Rs.11,300</p>
+                <p>Availability: Limited stock</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="kids">
+        <h2>Kids' Clothing</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="kids-tshirt.jpg" alt="Kids' T-Shirt">
+                <h3>Kids' T-Shirt</h3>
+                <p>Price: Rs.4,350</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="Kids' Shorts.jpg" alt="Kids' Shorts">
+                <h3>Kids' Shorts</h3>
+                <p>Price: Rs.5,800</p>
+                <p>Availability: In stock</p>
+            </div>
+            <div class="product-item">
+                <img src="Kids' Hat.jpg" alt="Kids' Hat">
+                <h3>Kids' Hat</h3>
+                <p>Price: Rs.2,900</p>
+                <p>Availability: In stock</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Clothing Retailer. All Rights Reserved.</p>
+		<P>Address: NO.317/B,Kottawa Road,Homagama.</p>
+		<p>Contact Us: fashionhub@email.com</p>
+    </footer>
+</body>
+</html>
